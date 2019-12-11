@@ -16,7 +16,9 @@ namespace ConsoleApp7
             Console.WriteLine(f.GetTillverkare());
             Console.WriteLine(f.GetÅrsmodell());
             Console.WriteLine(f.GetVikt());
-
+            Fordon b = new Fordon();
+            b.SetModell()
+            
 
 
         }
