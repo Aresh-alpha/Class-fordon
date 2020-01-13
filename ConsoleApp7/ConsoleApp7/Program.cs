@@ -7,19 +7,18 @@ namespace ConsoleApp7
     {
         static void Main(string[] args)
         {
-            Fordon f = new Fordon();
-            f.SetModell("M 5");
-            f.SetTillverkare("BMW");
-            f.SetÅrsmodell(2018);
-            f.SetVikt(10000);
-            Console.WriteLine(f.GetModell());
-            Console.WriteLine(f.GetTillverkare());
-            Console.WriteLine(f.GetÅrsmodell());
-            Console.WriteLine(f.GetVikt());
-            Fordon b = new Fordon();
-            b.SetModell()
+            Fordon f = new Fordon("BMW", "M 3",2018, 10000 );
+            Console.WriteLine(f.Tillverkare);
+            Console.WriteLine(f.Modell);
+            Console.WriteLine(f.Årsmodell);
+            Console.WriteLine(f.Vikt);
+          
+            Fordon b = new Fordon("BMW", "M 5", 2016, 9000);
+            Console.WriteLine(b.Tillverkare);
+            Console.WriteLine(b.Modell);
+            Console.WriteLine(b.Årsmodell);
+            Console.WriteLine(b.Vikt);
             
-
 
         }
     }

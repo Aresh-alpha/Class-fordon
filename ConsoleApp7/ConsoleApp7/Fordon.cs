@@ -12,37 +12,32 @@ namespace ConsoleApp7
         private int vikt;
 
 
-        public void SetTillverkare(string namn)
-        {
-            tillverkare = namn;
-        }
-        public string GetTillverkare()
-        {
-            return tillverkare;
-        }
-        public void SetModell(string m)
-        {
+        public Fordon(string n, string m, int å, int v)
+            {
+            tillverkare = n;
             modell = m;
-        }
-        public string GetModell()
-        {
-            return modell;
-        }
-        public void SetÅrsmodell(int å)
-        {
             årsmodell = å;
-        }
-        public int GetÅrsmodell()
-        {
-            return årsmodell;
-        }
-        public void SetVikt(int v)
-        {
             vikt = v;
-        }
-        public int GetVikt()
+            }
+        public string Tillverkare
         {
-            return vikt;
+            get { return tillverkare; }
+            set { tillverkare = value; }
+        }
+        public string Modell
+        {
+            get { return modell; }
+            set { modell = value; }
+        }
+        public int Årsmodell
+        {
+            get { return årsmodell; }
+            set { årsmodell = value; }
+        }
+        public int Vikt
+        {
+            get { return vikt; }
+            set { vikt = value; }
         }
     }
 }
