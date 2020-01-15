@@ -7,6 +7,9 @@ namespace ConsoleApp7
     {
         static void Main(string[] args)
         {
+            List<Fordon> fordonlista = new List<Fordon>();
+
+
             Fordon f = new Fordon("BMW", "M 3",2018, 10000 );
             Console.WriteLine(f.Tillverkare);
             Console.WriteLine(f.Modell);
@@ -18,7 +21,14 @@ namespace ConsoleApp7
             Console.WriteLine(b.Modell);
             Console.WriteLine(b.Årsmodell);
             Console.WriteLine(b.Vikt);
-            
+            fordonlista.Add(new Fordon("Audi", "R8", 2017, 8000));
+            foreach (Fordon element in fordonlista)
+            {
+                Console.WriteLine(element.Tillverkare);
+                Console.WriteLine(element.Modell);
+                Console.WriteLine(element.Årsmodell);
+                Console.WriteLine(element.Vikt);
+            }
 
         }
     }
